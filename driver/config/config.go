@@ -1563,7 +1563,6 @@ func (p *Config) PasskeyConfig(ctx context.Context) *webauthn.Config {
 		RPID:          id,
 		RPOrigins:     origins,
 		AuthenticatorSelection: protocol.AuthenticatorSelection{
-			AuthenticatorAttachment: "platform",
 			RequireResidentKey:      pointerx.Ptr(true),
 			ResidentKey:             protocol.ResidentKeyRequirementRequired,
 			UserVerification:        protocol.VerificationPreferred,
